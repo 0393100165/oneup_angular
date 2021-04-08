@@ -2,13 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { BuyerRoutingModule } from './buyer-routing.module';
-import { DashboardModule } from './dashboard/dashboard.module';
+import { DisplayModule} from './display/display.module';
+
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
     BuyerRoutingModule,
-    DashboardModule
+    DisplayModule
   ]
 })
 export class BuyerModule { }

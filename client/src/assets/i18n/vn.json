@@ -1,0 +1,581 @@
+{
+    "login": {
+        "title": "Đăng Nhập",
+        "message": "Đăng Nhập để sử dụng SAZA.",
+        "form": {
+            "username": {
+                "label": "Tài Khoản",
+                "placeholder": "Enter your Tài Khoản",
+                "validation": {
+                    "required": "Tài Khoản chính xác.",
+                    "invalid": "Tài Khoản không chính xác."
+                }
+            },
+            "password": {
+                "label": "Mật khẩu",
+                "placeholder": "Hãy nhập mật khẩu",
+                "validation": {
+                    "required": "Mật khẩu là bắt buộc."
+                }
+            },
+            "remebertext": "Nhớ đăng nhập",
+            "button": {
+                "text": "Đăng Nhập"
+            },
+            "forgotlink": "Quên mật khẩu?"
+        },
+        "signuptext": "Không có tài khoản ?",
+        "signuplink": "Đăng ký ngay"
+    },
+    "signup": {
+        "title": "Đăng ký",
+        "message": "Nhận tài khoản SAZA của bạn ngay bây giờ.",
+        "form": {
+            "username": {
+                "label": "Tên tài khoản",
+                "placeholder": "Điền tên đăng nhập",
+                "validation": {
+                    "required": "Tên đăng nhập là bắt buộc."
+                }
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "Điền email",
+                "validation": {
+                    "required": "Email là bắt buộc.",
+                    "invalid": "Email không hợp lệ. Vui lòng cung cấp email hợp lệ."
+                }
+            },
+            "password": {
+                "label": "Mật khẩu",
+                "placeholder": "điền mật khẩu",
+                "validation": {
+                    "required": "Mật khẩu là bắt buộc."
+                }
+            },
+            "button": {
+                "text": "Đăng ký"
+            },
+            "notice": "Bằng cách đăng ký, bạn đồng ý với SAZA",
+            "term-text": "Điều khoản sử dụng"
+        },
+        "signintext": "Bạn đã sẵn sàng để tạo một tài khoản ?",
+        "signinlink": "Đăng nhập"
+    },
+    "resetpassword": {
+        "title": "Đặt lại mật khẩu",
+        "message": "Đặt lại mật khẩu với SAZA.",
+        "form": {
+            "email": {
+                "label": "Email",
+                "placeholder": "Nhập email của bạn",
+                "validation": {
+                    "required": "Email là bắt buộc.",
+                    "invalid": "Email không hợp lệ. Vui lòng cung cấp email hợp lệ."
+                }
+            },
+            "button": {
+                "text": "Cài lại"
+            }
+        },
+        "signintext": " Ghi nhớ ?",
+        "signinlink": "Đăng nhập"
+    },
+    "lockscreen": {
+        "title": "Màn hình khóa",
+        "message": "Nhập mật khẩu của bạn để mở khóa màn hình!",
+        "name": "Patricia Smith",
+        "form": {
+            "password": {
+                "label": "Mật khẩu",
+                "placeholder": "nhập mật khẩu",
+                "validation": {
+                    "required": "Mật khẩu là bắt buộc."
+                }
+            },
+            "button": {
+                "text": "Mở khóa"
+            }
+        },
+        "signintext": "Không phải bạn ? trở về",
+        "signinlink": "Signin"
+    },
+    "chat": {
+        "tabs": {
+            "profile": {
+                "title": "Thông tin của tôi",
+                "dropdown": {
+                    "edit": "Sửa",
+                    "action": "Hành động",
+                    "another": "Một hành động khác"
+                },
+                "user": "Patricia Smith",
+                "status": "Hoạt động",
+                "message": "Nếu một số ngôn ngữ kết hợp với nhau, ngữ pháp của ngôn ngữ kết quả sẽ đơn giản và thông thường hơn ngữ pháp của từng ngôn ngữ.",
+                "about": {
+                    "text": "Bản văn",
+                    "name": {
+                        "text": "Tên",
+                        "value": "Patricia Smith"
+                    },
+                    "email": {
+                        "text": "Email",
+                        "value": "abc@123.com"
+                    },
+                    "time": {
+                        "text": "Thời gian",
+                        "value": "11:40 AM"
+                    },
+                    "location": {
+                        "text": "Vị trí",
+                        "value": "California, USA"
+                    }
+                },
+                "attachedfile": {
+                    "text": "File đính kèm",
+                    "file1": {
+                        "name": "Admin-A.zip",
+                        "size": "12.5 MB"
+                    },
+                    "file2": {
+                        "name": "Image-1.jpg",
+                        "size": "4.2 MB"
+                    },
+                    "file3": {
+                        "name": "Image-2.jpg",
+                        "size": "3.1 MB"
+                    },
+                    "file4": {
+                        "name": "Landing-A.zip",
+                        "size": "6.7 MB"
+                    },
+                    "dropdown": {
+                        "action": "Hoạt động",
+                        "another": "Một hành động khác",
+                        "delete": "Xóa bỏ"
+                    }
+                }
+            },
+            "chats": {
+                "title": "Chats",
+                "search": {
+                    "placeholder": "Tìm kiếm tin nhắn hoặc người dùng"
+                },
+                "users": {
+                    "1": "Patrick",
+                    "2": "Doris",
+                    "3": "Emily",
+                    "4": "Steve",
+                    "5": "Teresa"
+                },
+                "recent": {
+                    "title": "Gần đây",
+                    "userslist": {
+                        "user1": {
+                            "name": "Patrick Hendricks",
+                            "message": "Này! tôi rảnh rồi",
+                            "time": "05 phút"
+                        },
+                        "user2": {
+                            "name": "Mark Messer",
+                            "message": "Hình ảnh",
+                            "time": "12 phút"
+                        },
+                        "user3": {
+                            "name": "General",
+                            "message": "Chủ đề này thật tuyệt vời!",
+                            "time": "20 phút"
+                        },
+                        "user4": {
+                            "name": "Doris Brown",
+                            "message": "Rất vui được gặp bạn",
+                            "time": "10:12 AM"
+                        },
+                        "user5": {
+                            "name": "Designer",
+                            "message": "Cuộc họp tiếp theo 10:00 sáng ngày mai",
+                            "time": "12:01 PM"
+                        },
+                        "user6": {
+                            "name": "Steve Walker",
+                            "message": "Admin-A.zip",
+                            "time": "03:20 PM"
+                        },
+                        "user7": {
+                            "name": "Albert Rodarte",
+                            "message": "đánh máy...",
+                            "time": "04:56 PM"
+                        },
+                        "user8": {
+                            "name": "Mirta George",
+                            "message": "Vâng mọi thứ đều ổn",
+                            "time": "12/07"
+                        },
+                        "user9": {
+                            "name": "Paul Haynes",
+                            "message": "Chào buổi sáng",
+                            "time": "12/07"
+                        },
+                        "user10": {
+                            "name": "Jonathan Miller",
+                            "message": "Chào! Bạn khỏe không?",
+                            "time": "12/07"
+                        },
+                        "user11": {
+                            "name": "Ossie Wilson",
+                            "message": "Tôi đã hoàn thành nó! Thấy bạn như vậy",
+                            "time": "11/07"
+                        },
+                        "user12": {
+                            "name": "Sara Muller",
+                            "message": "ồ điều đó thật tuyệt",
+                            "time": "11/07"
+                        }
+                    }
+                },
+                "modal": {
+                    "title": "Thêm thành viên",
+                    "form": {
+                        "name": {
+                            "label": "Tên",
+                            "placeholder": "Nhập tên",
+                            "validation": {
+                                "required": "Tên là bắt buộc."
+                            }
+                        },
+                        "buttons": {
+                            "close": "Đóng",
+                            "save": "Lưu"
+                        }
+                    }
+                }
+            },
+            "groups": {
+                "title": "Dánh sách nhóm",
+                "search": {
+                    "placeholder": "Tìm kiếm nhóm..."
+                },
+                "list": {
+                    "general": "Chung",
+                    "reporting": "Báo cáo",
+                    "designers": "Nhà thiết kế",
+                    "developer": "Nhà phát triển",
+                    "projectalpha": "Dự án-alpha",
+                    "snacks": "Đồ ăn nhẹ"
+                },
+                "modal": {
+                    "title": "Tạo nhóm mới",
+                    "form": {
+                        "name": {
+                            "label": "Tên nhóm",
+                            "placeholder": "Nhập tên nhóm",
+                            "validaion": {
+                                "required": "Tên nhóm là bắt buộc."
+                            }
+                        },
+                        "members": {
+                            "label": "Thành viên nhóm",
+                            "button": {
+                                "text": "chọn thành viên"
+                            }
+                        },
+                        "description": {
+                            "label": "Mô tả",
+                            "placeholder": "Nhập mô tả"
+                        },
+                        "button": {
+                            "close": "Đóng",
+                            "create": "Tạo nhóm"
+                        }
+                    }
+                }
+            },
+            "contacts": {
+                "title": "Liên lạc",
+                "search": {
+                    "placeholder": "Tìm kiếm người dùng..."
+                },
+                "list": {
+                    "A": {
+                        "text": "A",
+                        "name": "Albert Rodarte",
+                        "name2": "Allison Etter"
+                    },
+                    "C": {
+                        "text": "C",
+                        "name": "Craig Smiley"
+                    },
+                    "D": {
+                        "text": "D",
+                        "name": "Daniel Clay",
+                        "name2": "Doris Brown"
+                    },
+                    "H": {
+                        "text": "H",
+                        "name": "Hanah Mile"
+                    },
+                    "I": {
+                        "text": "I",
+                        "name": "Iris Wells"
+                    },
+                    "J": {
+                        "text": "J",
+                        "name": "Juan Flakes",
+                        "name2": "John Hall",
+                        "name3": "Joy Southern"
+                    },
+                    "M": {
+                        "text": "M",
+                        "name": "Mary Farmer",
+                        "name2": "Mark Messer",
+                        "name3": "Michael Hinton"
+                    },
+                    "O": {
+                        "text": "O",
+                        "name": "Ossie Wilson"
+                    },
+                    "P": {
+                        "text": "P",
+                        "name": "Phillis Griffin",
+                        "name2": "Paul Haynes"
+                    },
+                    "R": {
+                        "text": "R",
+                        "name": "Rocky Jackson"
+                    },
+                    "S": {
+                        "text": "S",
+                        "name": "Sara Muller",
+                        "name2": "Simon Velez",
+                        "name3": "Steve Walker"
+                    },
+                    "dropdown": {
+                        "item1": "Share",
+                        "item2": "Block",
+                        "item3": "Remove"
+                    }
+                },
+                "modal": {
+                    "title": "Thêm liên hệ",
+                    "form": {
+                        "email": {
+                            "label": "Email",
+                            "placeholder": "Nhập Email"
+                        },
+                        "message": {
+                            "label": "Thông báo mời",
+                            "placeholder": "Nhập tin nhắn"
+                        },
+                        "button": {
+                            "close": "Đóng",
+                            "contact": "Mời liên hệ"
+                        }
+                    }
+                }
+            },
+            "settings": {
+                "title": "Cài đặt",
+                "name": "Patrick Smith",
+                "status": {
+                    "text": "Có sẵn",
+                    "dropdown": {
+                        "available": "Có sẵn",
+                        "busy": "Bận"
+                    }
+                },
+                "info": {
+                    "title": "Thông tin cá nhân",
+                    "name": {
+                        "text": "Tên",
+                        "value": "Patricia Smith"
+                    },
+                    "email": {
+                        "text": "Email",
+                        "value": "abc@123.com"
+                    },
+                    "time": {
+                        "text": "Thời gian",
+                        "value": "11:40 AM"
+                    },
+                    "location": {
+                        "text": "Vị trí",
+                        "value": "California, USA"
+                    },
+                    "edit": "Sửa"
+                },
+                "privacy": {
+                    "title": "Riêng tư",
+                    "photo": "Ảnh hồ sơ",
+                    "dropdowntext": "Tất cả mọi người",
+                    "dropdown": {
+                        "everyone": "Tất cả mọi người",
+                        "selected": "Đã chọn",
+                        "nobody": "Không ai"
+                    },
+                    "seen": "Xem lần cuối",
+                    "status": "Trạng thái",
+                    "receipt": "Đọc biên nhận",
+                    "groups": "Nhóm"
+                },
+                "security": {
+                    "title": "Bảo vệ",
+                    "text": "Hiển thị thông báo bảo mật"
+                },
+                "help": {
+                    "title": "Giúp đỡ",
+                    "faqs": "Câu hỏi thường gặp",
+                    "contact": "Tiếp xúc",
+                    "policy": "Điều khoản & Chính sách quyền riêng tư"
+                },
+                "modal": {
+                    "title": "Thay đổi tài liệu",
+                    "form": {
+                        "profile": {
+                            "label": "Hồ sơ"
+                        },
+                        "name": {
+                            "label": "Tên",
+                            "placeholder": "Nhập tên",
+                            "validation": {
+                                "required": "Tên là bắt buộc."
+                            }
+                        },
+                        "email": {
+                            "label": "Email",
+                            "placeholder": "Nhập email",
+                            "validation": {
+                                "required": "Email là bắt buộc.",
+                                "invalid": "Email không hợp lệ. Vui lòng cung cấp email hợp lệ."
+                            }
+                        },
+                        "location": {
+                            "label": "Vị trí",
+                            "placeholder": "Nhập vị trí",
+                            "validation": {
+                                "required": "Vị trí là bắt buộc."
+                            }
+                        },
+                        "button": {
+                            "close": "Đóng",
+                            "save": "Lưu"
+                        }
+                    }
+                }
+            }
+        },
+        "profiledropdown": {
+            "profile": "Hồ sơ",
+            "setting": "Cài đặt",
+            "logout": "Đăng xuất"
+        },
+        "chatpanelheader": {
+            "name": "Doris Brown",
+            "search": {
+                "placeholder": "Tìm kiếm.."
+            },
+            "dropdown": {
+                "viewprofile": "Xem lí lịch",
+                "archive": "Lưu trữ",
+                "muted": "Tắt tiếng",
+                "delete": "Xóa bỏ"
+            }
+        },
+        "messages": {
+            "1": {
+                "name": "Dorsin Brown",
+                "message": "Chào buổi sáng",
+                "time": "10:00"
+            },
+            "2": {
+                "name": "Patricia Smith",
+                "message": "Chào buổi sáng, bạn khỏe không? Còn cuộc gặp tiếp theo của chúng ta thì sao?",
+                "time": "10:02"
+            },
+            "3": {
+                "name": "Doris Brown",
+                "message": "Vâng mọi thứ đều ổn",
+                "message2": "& Cuộc họp tiếp theo vào ngày mai 10 giờ sáng",
+                "time": "10:05"
+            },
+            "4": {
+                "name": "Patricia Smith",
+                "message": "Ồ điều đó thật tuyệt",
+                "time": "10:06"
+            },
+            "5": {
+                "name": "Doris Brown",
+                "time": "10:09"
+            },
+            "6": {
+                "name": "Patricia Smith",
+                "time": "10:16"
+            },
+            "7": {
+                "name": "Doris Brown",
+                "message": "đánh máy"
+            },
+            "dropdown": {
+                "copy": "Sao chép",
+                "save": "Lưu",
+                "forward": "Ở đằng trước",
+                "delete": "Xóa bỏ"
+            },
+            "filedropdown": {
+                "share": "Chia sẻ",
+                "delete": "Xóa bỏ"
+            }
+        },
+        "rightpanel": {
+            "name": "Dorsin Brown",
+            "status": "Hoạt động",
+            "message": "Nếu một số ngôn ngữ kết hợp với nhau, ngữ pháp của ngôn ngữ kết quả sẽ đơn giản và thông thường hơn ngữ pháp của từng ngôn ngữ.",
+            "about": {
+                "text": "Văn bản",
+                "name": {
+                    "text": "Tên",
+                    "value": "Dorsin Brown"
+                },
+                "email": {
+                    "text": "Email",
+                    "value": "abc@123.com"
+                },
+                "time": {
+                    "text": "Thời gian",
+                    "value": "11:40 AM"
+                },
+                "location": {
+                    "text": "Vị trí",
+                    "value": "California, USA"
+                }
+            },
+            "attachedfile": {
+                "text": "File đính kèm",
+                "file1": {
+                    "name": "admin_v1.0.zip",
+                    "size": "12.5 MB"
+                },
+                "file2": {
+                    "name": "Image-1.jpg",
+                    "size": "4.2 MB"
+                },
+                "file3": {
+                    "name": "Image-2.jpg",
+                    "size": "3.1 MB"
+                },
+                "file4": {
+                    "name": "Landing-A.zip",
+                    "size": "6.7 MB"
+                },
+                "dropdown": {
+                    "action": "Hoạt động",
+                    "another": "Một hành động khác",
+                    "delete": "Xóa bỏ"
+                }
+            }
+        }
+    },
+    "footer": {
+        "name": "SAZA. Được chế tạo với ",
+        "text": " bởi nhóm SAZA"
+    }
+}

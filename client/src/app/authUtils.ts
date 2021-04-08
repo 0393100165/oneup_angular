@@ -1,0 +1,122 @@
+import * as firebase from 'firebase/app';
+// Add the Firebase products that you want to use
+import 'firebase/auth';
+import 'firebase/firestore';
+class FirebaseAuthBackend {
+    constructor(firebaseConfig: Object) {
+        if (firebaseConfig) {
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.auth().onAuthStateChanged((user) => {
+                if (user) {
+                    sessionStorage.setItem('authUser', JSON.stringify(user));
+                } else {
+                    sessionStorage.removeItem('authUser');
+                }
+            });
+        }
+    }
+
+    /**
+     * Registers the user with given details
+     */
+    registerUser = (email: string, password: string) => {
+        return new Promise((resolve, reject) => {
+            firebase.auth().createUserWithEmailAndPassword(email, password).then((user: any) => {
+                var user: any = firebase.auth().currentUser;
+                resolve(user);
+            }, (error) => {
+                reject(this._handleError(error));
+            });
+        });
+    }
+
+    /**
+     * Login user with given details
+     */
+    loginUser = (username: string, password: string) => {
+        return new Promise((resolve, reject) => {
+            firebase.auth().signInWithUsernameAndPassword(username, password).then((user: any) => {
+                // eslint-disable-next-line no-redeclare
+                var user: any = firebase.auth().currentUser;
+                resolve(user);
+            }, (error) => {
+                reject(this._handleError(error));
+            });
+        });
+    }
+
+    /**
+     * forget Password user with given details
+     */
+    forgetPassword = (email: string) => {
+        return new Promise((resolve, reject) => {
+            // tslint:disable-next-line: max-line-length
+            firebase.auth().sendPasswordResetEmail(email, { url: window.location.protocol + '//' + window.location.host + '/login' }).then(() => {
+                resolve(true);
+            }).catch((error) => {
+                reject(this._handleError(error));
+            });
+        });
+    }
+
+    /**
+     * Logout the user
+     */
+    logout = () => {
+        return new Promise((resolve, reject) => {
+            firebase.auth().signOut().then(() => {
+                resolve(true);
+            }).catch((error) => {
+                reject(this._handleError(error));
+            });
+        });
+    }
+
+    setLoggeedInUser = (user: any) => {
+        sessionStorage.setItem('authUser', JSON.stringify(user));
+    }
+
+    /**
+     * Returns the authenticated user
+     */
+    getAuthenticatedUser = () => {
+        if (!sessionStorage.getItem('authUser')) {
+            return null;
+        }
+        return JSON.parse(sessionStorage.getItem('authUser'));
+    }
+
+    /**
+     * Handle the error
+     * @param {*} error
+     */
+    _handleError(error: { message: any; }) {
+        // tslint:disable-next-line: prefer-const
+        var errorMessage = error.message;
+        return errorMessage;
+    }
+}
+
+// tslint:disable-next-line: variable-name
+let _fireBaseBackend = null;
+
+/**
+ * Initilize the backend
+ * @param {*} config
+ */
+const initFirebaseBackend = (config: Object) => {
+    if (!_fireBaseBackend) {
+        _fireBaseBackend = new FirebaseAuthBackend(config);
+    }
+    return _fireBaseBackend;
+};
+
+/**
+ * Returns the firebase backend
+ */
+const getFirebaseBackend = () => {
+    return _fireBaseBackend;
+};
+
+export { initFirebaseBackend, getFirebaseBackend };
